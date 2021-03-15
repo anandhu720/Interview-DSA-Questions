@@ -28,7 +28,6 @@ int main()
 
 vector<int> duplicates(int a[], int n)
 {
-    // code here
     vector<int> dup;
     int hash[n] = {0};
     for (int i = 0; i < n; i++)
