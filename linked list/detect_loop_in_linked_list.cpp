@@ -3,8 +3,7 @@ Given a linked list of N nodes. The task is to check if the the linked list has 
 Linked list can contain self loop.
 */
 
-// { Driver Code Starts
-// driver code
+
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -65,11 +64,11 @@ int main()
     }
     return 0;
 }
-// } Driver Code Ends
+
 
 bool detectLoop(Node *head)
 {
-    // your code here
+  
     Node *p = head;
     Node *q = head;
     do

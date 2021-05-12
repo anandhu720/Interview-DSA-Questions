@@ -4,7 +4,6 @@ When a value appears in multiple nodes,
 the node which appeared first should be kept, all others duplicates are to be removed.
 */
 
-// { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -33,7 +32,7 @@ Node *removeDuplicates(Node *root);
 
 int main()
 {
-    // your code goes here
+
     int T;
     cin >> T;
 
@@ -62,7 +61,7 @@ int main()
         cout << endl;
     }
     return 0;
-} // } Driver Code Ends
+} 
 
 // Function to remove duplicates from the linked list
 // root: root of the linked list

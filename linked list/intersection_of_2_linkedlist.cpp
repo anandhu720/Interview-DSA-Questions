@@ -4,8 +4,6 @@ that returns the intersection of two linked lists.
 Each of the two linked list contains distinct node values.
 */
 
-// { Driver Code Starts
-//
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -71,12 +69,11 @@ int main()
     }
     return 0;
 }
-// } Driver Code Ends
+
 
 Node *findIntersection(Node *head1, Node *head2)
 {
-    // code here
-    // return the head of intersection list
+
     unordered_set<int> st;
     while (head2)
     {

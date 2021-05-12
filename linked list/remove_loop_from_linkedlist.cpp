@@ -3,8 +3,6 @@ You are given a linked list of N nodes. Remove the loop from the linked list, if
 Note: X is the position of the node to which the last node is connected to. If it is 0, then there is no loop.
 */
 
-// { Driver Code Starts
-// driver code
 
 #include <iostream>
 using namespace std;
@@ -97,12 +95,11 @@ int main()
     }
     return 0;
 }
-// } Driver Code Ends
+
 
 void removeLoop(Node *head)
 {
-    // code here
-    // just remove the loop without losing any nodes
+  
     Node *p = head;
     Node *q = head;
     do

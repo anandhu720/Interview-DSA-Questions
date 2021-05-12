@@ -4,11 +4,9 @@ The task is to delete the node. Pointer/ reference to head node is not given.
 Note: No head reference is given to you. It is guaranteed that the node to be deleted is not a tail node in the linked list.
 */
 
-// { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
-/* Link list node */
 struct Node
 {
     int data;
@@ -56,7 +54,7 @@ void insert()
     }
 }
 
-/* Function to print linked list */
+
 void printList(Node *node)
 {
     while (node != NULL)
@@ -69,10 +67,10 @@ void printList(Node *node)
 
 void deleteNode(Node *node_ptr);
 
-/* Drier program to test above function*/
+
 int main(void)
 {
-    /* Start with the empty list */
+    
 
     int t, k, n, value;
 
@@ -91,16 +89,13 @@ int main(void)
     return (0);
 }
 
-// } Driver Code Ends
 
-// This function should delete node from linked list. The function
-// may assume that node exists in linked list and is not last node
-// node: reference to the node which is to be deleted
 void deleteNode(Node *node)
 {
-    // Your code here
     struct Node *p;
     if (node == NULL)
+        return;
+    if(node->next == NULL)
         return;
     p = node->next;
     node->data = p->data;

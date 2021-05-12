@@ -5,7 +5,6 @@ sum is equal to the given value X.
 Note: The 2 numbers of a pair should be parts of different lists.
 */
 
-// { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -75,12 +74,11 @@ int main()
         cout << countPairs(head1, head2, x) << '\n';
     }
     return 0;
-} // } Driver Code Ends
+} 
 
-// your task is to complete this function
 int countPairs(struct Node *head1, struct Node *head2, int x)
 {
-    // Code here
+    
     int count = 0;
     unordered_set<int> u;
 
