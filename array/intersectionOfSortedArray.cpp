@@ -1,6 +1,6 @@
 /*
  *
- *Intersection of two arrays
+ *Intersection of two sorted arrays
  *
  *
  */
