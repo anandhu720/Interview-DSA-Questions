@@ -6,34 +6,6 @@ We can switch from one array to another array only at the common elements.
 Note: Only one repeated value is considered in the valid path sum.
 */
 
-// { Driver Code Starts
-#include <bits/stdc++.h>
-using namespace std;
-
-int max_path_sum(int[], int[], int, int);
-
-int main()
-{
-    int T;
-    cin >> T;
-
-    while (T--)
-    {
-        int N, M;
-        cin >> N >> M;
-        fflush(stdin);
-        int a[N], b[M];
-        for (int i = 0; i < N; i++)
-            cin >> a[i];
-        for (int i = 0; i < M; i++)
-            cin >> b[i];
-        int result = max_path_sum(a, b, N, M);
-        cout << result << endl;
-    }
-}
-
-// } Driver Code Ends
-
 /*You are required to complete this method*/
 int max_path_sum(int A[], int B[], int l1, int l2)
 {
@@ -68,6 +40,4 @@ int max_path_sum(int A[], int B[], int l1, int l2)
         sum2 += B[j];
     result += max(sum1, sum2);
     return result;
-
-    //Your code here
 }
