@@ -1,4 +1,4 @@
-# competitive-coding-questions-and-solution
+# Competitive Coding Qestions and Solution
 
 Here you can find most of the competitive coding and interview dsa coding questions asked by many companies and its solutions done by me
 most of the question are from GeeksforGeeks and Leetcode.
