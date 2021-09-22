@@ -42,33 +42,17 @@ struct Node
 
 //Function to return a list containing elements of left view of the binary tree.
 
-vector<int> leftUni(Node *root,int *max_level,int level){
-
-    vector<int> ans;
-
-    if(root == NULL)
-        return ans;
-
-    if(*max_level < level){
-        ans.push_back(root->data);
-        // cout<<root->data<<" ";
-        *max_level = level;
-    }
-
-    leftUni(root->left,max_level,level+1);
-    leftUni(root->right,max_level,level+1);
-
-
-    return ans;
+void recursion(Node *root,int level,vector<int> &ans){
+    if(!root) return;
+    if(ans.size() == level) ans.push_back(root->data);
+    recursion(root->left,level+1,ans);
+    recursion(root->right,level+1,ans);
 }
-
 vector<int> leftView(Node *root)
 {
    // Your code here
    vector<int> ans;
-   int max_level = 0;
-   ans = leftUni(root,&max_level,1);
-
+   recursion(root,0,ans);
    return ans;
 }
 
